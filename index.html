@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Portfolio of Mr. Gasinpoj Poonsinsiri</title>
     <style>
-        header {
-            background-color: #0077b6;
-            padding: 20px;
-            color: white;
-            text-align: center;
-        }
-        
-        .center-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 10%; /* ความกว้างของภาพ */
-            height: 50vh; /* ความสูงของภาพ */
-            object-fit: contain; /* รักษาสัดส่วนของภาพ */
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-        }
+      header {
+        background-color: #0077b6;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      .center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%; /* ความกว้างของภาพ */
+        height: 50vh; /* ความสูงของภาพ */
+        object-fit: contain; /* รักษาสัดส่วนของภาพ */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Portfolio of Mr. Gasinpoj Poonsinsiri</h1>
-        <nav>
-            <!-- Navigation links if needed -->
-        </nav>
+      <h1>Portfolio of Mr. Gasinpoj Poonsinsiri</h1>
+      <nav>
+        <!-- Navigation links if needed -->
+      </nav>
     </header>
     <main>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Developer</li>
-                <li>Design Database</li>
-                <li>Funny</li>
-                <li>Sport</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>อ่านหนังสือ</li>
-                <li>ออกกำลังกาย</li>
-            </ul>
-        </section>
+      <div>
+        <h2>About Me</h2>
+        <div id="showMyInfo">
+          <button onclick="showMyInfo()">about me</button>
+        </div>
+      </div>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Developer</li>
+          <li>Design Database</li>
+          <li>Funny</li>
+          <li>Sport</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Hobbies</h2>
+        <ul>
+          <li>อ่านหนังสือ</li>
+          <li>ออกกำลังกาย</li>
+        </ul>
+      </section>
     </main>
-    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="A cute cat" class="center-image">
+    <img
+      src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg"
+      alt="A cute cat"
+      class="center-image"
+    />
     <footer>
-        <!-- Footer content if needed -->
+      <!-- Footer content if needed -->
     </footer>
-</body>
+    <script>
+      function showMyInfo() {
+        const myInfo = `
+    <p>
+      My name is Gasinpoj Poonsinsiri. I am a student at Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang. I am studying in Computer Science. I am interested in programming and design database. I am a funny person and I like to play sport.
+    </p>
+  `;
+        document.getElementById("showMyInfo").innerHTML = myInfo;
+      }
+    </script>
+  </body>
 </html>
